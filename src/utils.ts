@@ -19,6 +19,6 @@ export function makeGatewayURL(
 }
 
 export function makeIPFSURI(cid: string, path: string): string {
-  const u = new URL(path, `ipfs://${cid}`)
+  const u = new URL(path, `ipfs://${cid}/`)
   return u.toString()
 }
